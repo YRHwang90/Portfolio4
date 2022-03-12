@@ -1,0 +1,18 @@
+every(1:3, function(x) x > 1)
+every(1:3, function(.x) .x > 1)
+every(1:3, ~ .x > 1)
+
+?every()
+
+print(sim_result[[1]])
+
+hi<-sim_result[[1]]
+print(hi)
+print
+print(fixef(hi))
+
+tidy(sim_result[[1]],effects ="ran_pars", scale="vcov")
+tidy(sim_result[[1]],effects="fixed")
+?tidy()
+install.packages('broom.mixed')
+library(broom.mixed)

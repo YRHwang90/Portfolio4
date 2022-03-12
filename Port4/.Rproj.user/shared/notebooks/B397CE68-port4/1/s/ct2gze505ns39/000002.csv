@@ -1,0 +1,5 @@
+"0",""
+"0","uj<-rmnorm(cn,mean=rep(0,2), varcov=G)"
+"0","eij<-rnorm(cn*cs,sd=sqrt(sigma2))"
+"0",""
+"0",""

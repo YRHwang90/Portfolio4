@@ -1,0 +1,12 @@
+"0",""
+"0","library(lme4)"
+"2","Loading required package: Matrix
+"
+"0","library(texreg)"
+"2","Version:  1.37.5
+Date:     2020-06-17
+Author:   Philip Leifeld (University of Essex)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation(""texreg"").
+"

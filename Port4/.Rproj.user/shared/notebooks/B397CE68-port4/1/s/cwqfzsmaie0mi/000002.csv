@@ -1,0 +1,5 @@
+"0",""
+"0","run<-function(df){"
+"0","  lmer(y~time + (1|pid), data=df)"
+"0","}"
+"0",""
