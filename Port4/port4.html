@@ -270,17 +270,17 @@ for(macro in (1:N)){
 R.intercept&lt;-as.data.frame(R.intercept)
 names(R.intercept)&lt;-c(&quot;macro&quot;,&quot;micro&quot;,&quot;yij&quot;,&quot;age&quot;,&quot;xij&quot;,&quot;u0j&quot;,&quot;rij&quot;)
 head(R.intercept,10)</code></pre>
-<pre><code>##    macro micro      yij      age         xij       u0j         rij
-## 1      1     1 61.92648 28.29358  1.39119328 0.5691956 -3.01226223
-## 2      1     2 67.70767 28.29358  1.73614015 0.5691956  2.07903482
-## 3      1     3 58.36747 28.29358 -0.21391725 0.5691956 -3.36104904
-## 4      1     4 61.03505 28.29358 -0.08329641 0.5691956 -0.95471463
-## 5      1     5 63.14728 28.29358  0.92183470 0.5691956 -0.85274309
-## 6      1     6 61.68930 28.29358  0.90858594 0.5691956 -2.28422628
-## 7      1     7 66.93026 28.29358  2.13822528 0.5691956  0.49745522
-## 8      1     8 61.32028 28.29358  0.22114487 0.5691956 -1.27836354
-## 9      1     9 64.78691 28.29358  1.35528207 0.5691956 -0.08001164
-## 10     1    10 59.03417 28.29358 -0.94890600 0.5691956 -1.22436956</code></pre>
+<pre><code>##    macro micro      yij      age         xij      u0j       rij
+## 1      1     1 67.70245 31.94801 -2.73015067 1.274072  2.992654
+## 2      1     2 71.50349 31.94801 -0.65316428 1.274072  2.639722
+## 3      1     3 68.28772 31.94801  0.48107280 1.274072 -2.844520
+## 4      1     4 65.82264 31.94801 -1.42487664 1.274072 -1.497699
+## 5      1     5 73.11893 31.94801  0.35482215 1.274072  2.239186
+## 6      1     6 68.69659 31.94801  0.56207543 1.274072 -2.597656
+## 7      1     7 70.92720 31.94801  1.16263578 1.274072 -1.568166
+## 8      1     8 70.60528 31.94801  0.85561883 1.274072 -1.276060
+## 9      1     9 65.90516 31.94801 -0.18644415 1.274072 -3.892048
+## 10     1    10 68.48482 31.94801  0.08329799 1.274072 -1.851874</code></pre>
 </div>
 <div id="fitting-models" class="section level3">
 <h3>fitting models</h3>
@@ -291,28 +291,28 @@ summary(model1)</code></pre>
 ##    Data: R.intercept
 ## 
 ##      AIC      BIC   logLik deviance df.resid 
-##   8668.5   8696.5  -4329.2   8658.5     1995 
+##   8616.1   8644.1  -4303.1   8606.1     1995 
 ## 
 ## Scaled residuals: 
-##     Min      1Q  Median      3Q     Max 
-## -4.0429 -0.6675  0.0158  0.6912  2.9825 
+##      Min       1Q   Median       3Q      Max 
+## -2.86799 -0.66382 -0.01847  0.65918  3.15092 
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev.
-##  macro    (Intercept) 1.504    1.226   
-##  Residual             3.992    1.998   
+##  macro    (Intercept) 1.410    1.187   
+##  Residual             3.895    1.974   
 ## Number of obs: 2000, groups:  macro, 100
 ## 
 ## Fixed effects:
 ##             Estimate Std. Error t value
-## (Intercept) 5.054465   0.446486   11.32
-## xij         1.992041   0.046391   42.94
-## age         1.997775   0.009472  210.90
+## (Intercept) 5.682447   0.388512   14.63
+## xij         1.984080   0.044288   44.80
+## age         1.986504   0.008752  226.98
 ## 
 ## Correlation of Fixed Effects:
 ##     (Intr) xij   
-## xij  0.001       
-## age -0.956 -0.003</code></pre>
+## xij -0.020       
+## age -0.945  0.019</code></pre>
 </div>
 </div>
 </div>
@@ -576,7 +576,7 @@ summarize(fixefs_time,
 </div>
 <div id="exercise" class="section level2">
 <h2>exercise</h2>
-<p>sample size effects on fixed effect in this model (not in the tutorial ) 20x4 sample size</p>
+<p>sample size effects on fixed effect in this model (not in the tutorial ) 20x4 sample size (80)</p>
 <pre class="r"><code>fixefs_time%&gt;%
   ggplot(aes(x=est))+
   geom_density()</code></pre>
