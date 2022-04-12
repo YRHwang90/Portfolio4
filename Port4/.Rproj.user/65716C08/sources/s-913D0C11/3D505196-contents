@@ -2,7 +2,7 @@
 title: "Portfolio4A"
 author: "Yoo Ri Hwang"
 date: "3/11/2022"
-output: html_document
+output: github_document
 ---
 ## Packages 
 
